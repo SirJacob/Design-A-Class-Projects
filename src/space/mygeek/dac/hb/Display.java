@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2015 Cory.
+ * Copyright 2015 https://github.com/SirJacob
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +27,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Cory
+ * @author https://github.com/SirJacob
  */
 public class Display extends javax.swing.JFrame {
 
