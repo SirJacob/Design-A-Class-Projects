@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Cory
+ * @author https://github.com/SirJacob
  */
 public class InvestmentPortfolioTester {
 
