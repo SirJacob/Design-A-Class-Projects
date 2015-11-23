@@ -36,6 +36,7 @@ public class Display extends javax.swing.JFrame {
     /**
      * Creates new form Display
      */
+    @SuppressWarnings("OverridableMethodCallInConstructor")
     public Display() {
         initComponents();
         Scanner s = new Scanner(System.in);
