@@ -1,4 +1,4 @@
-package space.mygeek.dac.ip;
+package com.github.sirjacob.InvestmentPortfolio;
 
 import java.util.Scanner;
 

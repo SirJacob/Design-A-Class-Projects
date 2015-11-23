@@ -21,23 +21,56 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package space.mygeek.dac.hb;
+package com.github.sirjacob.HumanBody;
 
 /**
  *
  * @author https://github.com/SirJacob
  */
-public class Head extends BodyPart {
+public abstract class BodyPart {
 
-    public Head(double weight, double strength, double height, boolean broken) {
-        super(weight, strength, height, broken);
+    protected double weight, strength, height;
+    protected boolean broken;
+
+    public BodyPart(double weight, double strength, double height, boolean broken) {
+        this.weight = weight;
+        this.strength = strength;
+        this.height = height;
+        this.broken = broken;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setStrength(double strength) {
+        this.strength = strength;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setBroken(boolean broken) {
+        this.broken = broken;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public double getStrength() {
+        return strength;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public boolean isBroken() {
+        return broken;
     }
 
     @Override
-    public String toString() {
-        return String.format("Head: %s kg, %s in, %sN, isBroken = %s",
-                super.getWeight(), super.getHeight(),
-                super.getStrength(), super.isBroken());
-    }
-
+    public abstract String toString();
 }

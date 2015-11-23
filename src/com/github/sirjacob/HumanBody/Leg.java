@@ -21,33 +21,33 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package space.mygeek.dac.hb;
+package com.github.sirjacob.HumanBody;
 
 /**
  *
  * @author https://github.com/SirJacob
  */
-public class Torso extends BodyPart {
+public class Leg extends BodyPart {
 
-    protected boolean female;
+    protected boolean left;
 
-    public Torso(double weight, double strength, double height, boolean broken, boolean female) {
+    public Leg(double weight, double strength, double height, boolean broken, boolean left) {
         super(weight, strength, height, broken);
-        this.female = female;
+        this.left = left;
     }
 
-    public boolean isFemale() {
-        return female;
+    public boolean isLeft() {
+        return left;
     }
 
-    public void setFemale(boolean female) {
-        this.female = female;
+    public void setLeft(boolean left) {
+        this.left = left;
     }
 
     @Override
     public String toString() {
-        return String.format("Torso: isFemale = %s, %s kg, %s in, %sN, isBroken = %s",
-                this.isFemale(), super.getWeight(),
+        return String.format("Leg: isLeft = %s, %s kg, %s in, %sN, isBroken = %s",
+                this.isLeft(), super.getWeight(),
                 super.getHeight(), super.getStrength(),
                 super.isBroken());
     }

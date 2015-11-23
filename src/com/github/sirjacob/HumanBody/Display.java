@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package space.mygeek.dac.hb;
+package com.github.sirjacob.HumanBody;
 
 import java.util.Scanner;
 
@@ -355,38 +355,38 @@ public class Display extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPrintInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintInfoActionPerformed
-        p(String.format("%s\n%s\n%s\n%s\n%s\n%s\n", body.head.toString(), body.torso.toString(), body.arm1.toString(), body.arm2.toString(), body.leg1.toString(), body.leg2.toString()));
+        p(String.format("%s\n%s\n%s\n%s\n%s\n%s\n", body.bp[0].toString(), body.bp[1].toString(), body.bp[2].toString(), body.bp[3].toString(), body.bp[4].toString(), body.bp[5].toString()));
     }//GEN-LAST:event_btnPrintInfoActionPerformed
 
     private void toggleArmLBrokenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleArmLBrokenActionPerformed
         if (toggleArmLBroken.isSelected()) {
-            body.arm2.setBroken(true);
+            body.bp[3].setBroken(true);
         } else {
-            body.arm2.setBroken(false);
+            body.bp[3].setBroken(false);
         }
     }//GEN-LAST:event_toggleArmLBrokenActionPerformed
 
     private void toggleArmRBrokenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleArmRBrokenActionPerformed
         if (toggleArmRBroken.isSelected()) {
-            body.arm1.setBroken(true);
+            body.bp[2].setBroken(true);
         } else {
-            body.arm1.setBroken(false);
+            body.bp[2].setBroken(false);
         }
     }//GEN-LAST:event_toggleArmRBrokenActionPerformed
 
     private void toggleLegLBrokenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleLegLBrokenActionPerformed
         if (toggleLegLBroken.isSelected()) {
-            body.leg2.setBroken(true);
+            body.bp[5].setBroken(true);
         } else {
-            body.leg2.setBroken(false);
+            body.bp[5].setBroken(false);
         }
     }//GEN-LAST:event_toggleLegLBrokenActionPerformed
 
     private void toggleLegRBrokenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleLegRBrokenActionPerformed
         if (toggleLegRBroken.isSelected()) {
-            body.leg1.setBroken(true);
+            body.bp[4].setBroken(true);
         } else {
-            body.leg1.setBroken(false);
+            body.bp[4].setBroken(false);
         }
     }//GEN-LAST:event_toggleLegRBrokenActionPerformed
 

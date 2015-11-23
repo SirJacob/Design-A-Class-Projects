@@ -21,56 +21,34 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package space.mygeek.dac.hb;
+package com.github.sirjacob.HumanBody;
 
 /**
  *
  * @author https://github.com/SirJacob
  */
-public abstract class BodyPart {
+public class Torso extends BodyPart {
 
-    protected double weight, strength, height;
-    protected boolean broken;
+    protected boolean female;
 
-    public BodyPart(double weight, double strength, double height, boolean broken) {
-        this.weight = weight;
-        this.strength = strength;
-        this.height = height;
-        this.broken = broken;
+    public Torso(double weight, double strength, double height, boolean broken, boolean female) {
+        super(weight, strength, height, broken);
+        this.female = female;
     }
 
-    public void setWeight(double weight) {
-        this.weight = weight;
+    public boolean isFemale() {
+        return female;
     }
 
-    public void setStrength(double strength) {
-        this.strength = strength;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public void setBroken(boolean broken) {
-        this.broken = broken;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public double getStrength() {
-        return strength;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public boolean isBroken() {
-        return broken;
+    public void setFemale(boolean female) {
+        this.female = female;
     }
 
     @Override
-    public abstract String toString();
+    public String toString() {
+        return String.format("Torso: isFemale = %s, %s kg, %s in, %sN, isBroken = %s",
+                this.isFemale(), super.getWeight(),
+                super.getHeight(), super.getStrength(),
+                super.isBroken());
+    }
 }
