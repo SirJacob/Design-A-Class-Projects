@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  *
- * @author Cory
+ * @author https://github.com/SirJacob
  */
 public class InvestmentPortfolio {
 
