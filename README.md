@@ -1,1 +1,2 @@
-# Investment-Portfolio (Design A Class)
+# Design A Class Project(s)
+Investment-Portfolio & HumanBody
